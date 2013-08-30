@@ -1,0 +1,44 @@
+/* CAROUSEL.LESS FILE */
+
+#location {
+	background: green;
+	color: white;
+	min-height: 100px;
+}
+
+#coffee-carousel {
+	height: 360px;
+	background: #130900;
+	border-top: #5e3c2f 1px solid;
+	border-bottom: #3c271e 1px solid;
+	margin-bottom: 30px;
+
+	.carousel-indicators li {
+		position: relative;
+		top: 60px;
+		border-color: @textColor;
+
+		&.active {
+			background-color: @textColor;
+		}
+	}
+
+	img {
+		height: 358px;
+		margin: 0 auto;
+	}
+
+
+	@media (max-width: @screen-sm-max) {
+		height: 300px;
+
+		.carousel-indicators li {
+			top: 50px;
+		}
+
+		img {
+			height: 298px;
+			margin: 0 auto;
+		}
+	}
+}
