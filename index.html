@@ -13,9 +13,9 @@
 		<h1>The Coffee House</h1>
 	</div>
 
-	<div id="coffee-carousel" class="carousel slide">
+	<div id="coffee-carousel" class="carousel slide hidden-xs">
 		<!-- Indicators -->
-		<ol class="carousel-indicators">
+		<ol class="carousel-indicators hidden-xs">
 			<li data-target="#coffee-carousel" data-slide-to="0" class="active"></li>
 			<li data-target="#coffee-carousel" data-slide-to="1"></li>
 			<li data-target="#coffee-carousel" data-slide-to="2"></li>
@@ -44,12 +44,22 @@
 		</a>
 	</div>
 
+	<div id="location" class="row visible-xs">
+		<div class="container">
+			<div class="col-xs-3-push-3">
+				<h4>Open 24 Hours</h4>
+				<h5>Address Line 1 <br> Cityname St. 12345</h5>
+				<a href="#">Open in Maps</a>
+			</div>
+		</div>
+	</div>
+
 	<div id="menu" class="container">
-		<div class="row">
+		<div class="row visible-md visible-lg">
 			<h2>TODAY'S MENU</h2>
 		</div>
 		<div class="row">
-			<div class="menu-col-1 col-sm-4">
+			<div class="menu-col-1 col-sm-6 col-md-4">
 				<h3>- Coffee -</h3>
 				<ul>
 					<li>
@@ -82,16 +92,8 @@
 					</li>
 				</ul>
 			</div>
-			<div class="menu-col-2 col-sm-4 col-md-4">
-				<!-- <ul>
-					<li><img src="img/special-beans.jpg" /></li>
-					<li><img src="img/special-shirts.jpg" /></li>
-				</ul> -->
-				<img src="img/special-beans.jpg" />
-				<img src="img/special-shirts.jpg" />
-				
-			</div>
-			<div class="menu-col-3 col-sm-4 col-md-4">
+			
+			<div class="menu-col-2 col-sm-6 col-md-4 col-md-push-4">
 				<h3>- Tea -</h3>
 				<ul>
 					<li>
@@ -124,10 +126,24 @@
 					</li>
 				</ul>
 			</div>
+
+			<div class="menu-col-3 col-xs-12 col-md-4 col-md-pull-4">
+				<!-- <ul>
+					<li><img src="img/special-beans.jpg" /></li>
+					<li><img src="img/special-shirts.jpg" /></li>
+				</ul> -->
+				<div class="col-xs-6 col-md-12">
+					<img src="img/special-beans.jpg" />
+				</div>
+				<div class="col-xs-6 col-md-12">
+					<img src="img/special-shirts.jpg" />
+				</div>
+				
+			</div>
 		</div>
 	</div>
 
-
+	<!--#include file="_includes/footer.html" -->
 
 	<!-- <h1>The Coffee House</h1>
 	<div id="location" class="hidden-sm hidden-md hidden-lg">location for mobile</div>
@@ -139,7 +155,7 @@
 			<div class="demo-col-3 col-sm-4 col-md-4 col-md-pull-4"></div>
 		</div>
 	</div>
- -->
+ 	-->
 
 	<script src="//code.jquery.com/jquery.js"></script>
 	<script src="js/vendor-min.js"></script>

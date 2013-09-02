@@ -17,20 +17,30 @@ p {
 }
 
 #menu {
+	margin-bottom: 30px;
 	ul {
 		list-style-type: none;
 	}
 }
 
-.menu-col-1,
-.menu-col-2,
 .menu-col-3 {
-	// background: #666;
-	// min-height: 300px;
-	img {
-		width: 360px;
+	div {
+		img {
+			width: 100%;
+			margin: 0 auto;
+		}
 	}
 }
+
+// .menu-col-1,
+// .menu-col-2,
+// .menu-col-3 {
+// 	// background: #666;
+// 	// min-height: 300px;
+// 	img {
+// 		width: 360px;
+// 	}
+// }
 
 // .menu-col-1 {
 // 	background: yellow;
@@ -43,3 +53,8 @@ p {
 // .menu-col-3 {
 // 	background: blue;
 // }
+
+@media (max-width: @screen-sm-max) {
+	.menu-col-2 {
+	}
+}
