@@ -5927,7 +5927,7 @@ body {
   background-image: url('../img/bg-dark.jpg');
   background-repeat: no-repeat;
   background-position: top center;
-  width: 100%;
+  background-size: cover;
 }
 h1,
 h2,
@@ -5953,6 +5953,10 @@ h6,
 p {
   font-family: Helvetica, Arial, sans-serif;
 }
+.flush {
+  width: 100%;
+  margin: 0 auto;
+}
 .header {
   text-align: center;
   margin-bottom: 30px;
@@ -5962,9 +5966,10 @@ p {
 }
 /* CAROUSEL.LESS FILE */
 #location {
-  background-image: url('../img/exterior.jpg');
+  background: url('../img/exterior.jpg');
   color: white;
-  min-height: 100px;
+  min-width: 100%;
+  height: 300px;
 }
 #coffee-carousel {
   height: 360px;
@@ -6022,6 +6027,20 @@ p {
 }
 @media (max-width: 991px) {
   
+}
+.shirts {
+  overflow: hidden;
+  margin: 10px 0px;
+}
+.specials {
+  padding-top: 10px;
+}
+.col-xs-6 {
+  padding: 10px;
+}
+.col-xs-6 img {
+  width: 100%;
+  border: 10px solid rgba(255, 255, 255, 0.4);
 }
 footer {
   background: black;

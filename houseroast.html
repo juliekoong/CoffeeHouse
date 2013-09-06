@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>The Coffee House</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="css/main.css" rel="stylesheet" media="screen" />
+</head>
+<body>
+
+	<!--#include file="_includes/header.html" -->
+
+	<div class="container">
+		<div class="jumbotron">
+			<div class="row">
+				<a href="index.html">Home</a>
+			</div>
+			<div class="row">
+				<div class="col-sm-3 col-md-3">
+					<img src="img/store-item.jpg" />
+				</div>
+				<div class="col-sm-9 col-md-9">
+					<h2>House Blend</h2>
+					<p>$8.95</p>
+					<p>To create our House blend we combine natural and washed Central and South American coffees. We choose our blends for brightness, flavor, and aromas that make for a smooth, satisfying cup of coffee that can be enjoyed all day long.</p>
+					<div class="btn-group">
+						<button type="button" class="btn btn-default">Add to Cart</button>
+						<button type="button" class="btn btn-default">Checkout</button>
+					</div>
+
+					<ul class="nav nav-tabs" id="myTab">
+						<li class="active"><a href="#home">Home</a></li>
+						<li><a href="#profile">Profile</a></li>
+						<li><a href="#messages">Messages</a></li>
+						<li><a href="#settings">Settings</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div class="tab-pane active" id="home">...</div>
+						<div class="tab-pane" id="profile">...</div>
+						<div class="tab-pane" id="messages">...</div>
+						<div class="tab-pane" id="settings">...</div>
+					</div>
+
+					<script>
+					  $(function () {
+					    $('#myTab a:last').tab('show')
+					  })
+					</script>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!--#include file="_includes/footer.html" -->
+</body>
+</html>
