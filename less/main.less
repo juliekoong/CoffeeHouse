@@ -7,7 +7,8 @@
 
 
 
-@textColor:  #eadbd5;
+@lightBrown:  #eadbd5;
+@mediumBrown:  #bf9280;
 
 body {
 	background-image: url('../img/bg-dark.jpg');
@@ -17,22 +18,33 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6, p {
-	color: @textColor;
+	color: @lightBrown;
 }
 
 h1 {
 	font-family: 'Lobster', cursive;
-	color: @textColor;
+	color: @lightBrown;
 }
 
 h2, h3 {
 	font-family: 'Holtwood One SC', sans-serif;
-	color: @textColor;
+	color: @lightBrown;
 }
 
 h4, h5, h6, p {
 	font-family: Helvetica, Arial, sans-serif;
 }
+
+
+a {
+	color: @lightBrown;
+
+	&:hover {
+		color: @mediumBrown;
+		text-decoration: none;
+	}
+}
+
 
 .flush {
 	width: 100%;

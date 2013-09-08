@@ -5953,6 +5953,13 @@ h6,
 p {
   font-family: Helvetica, Arial, sans-serif;
 }
+a {
+  color: #eadbd5;
+}
+a:hover {
+  color: #bf9280;
+  text-decoration: none;
+}
 .flush {
   width: 100%;
   margin: 0 auto;
@@ -5976,7 +5983,7 @@ p {
   background: #130900;
   border-top: #5e3c2f 1px solid;
   border-bottom: #3c271e 1px solid;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 #coffee-carousel .carousel-indicators li {
   position: relative;
@@ -6014,19 +6021,41 @@ h4 {
 }
 p {
   font-size: 14px;
+  line-height: 10px;
+  color: #bf9280;
 }
 #menu {
   margin-bottom: 30px;
 }
-#menu ul {
-  list-style-type: none;
+.divider {
+  border-bottom: 2px #eadbd5 solid;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
 }
-.menu-col-3 div img {
+.home-menu li {
+  padding-bottom: 5px;
+}
+.specials div img {
   width: 100%;
   margin: 0 auto;
 }
-@media (max-width: 991px) {
+/* Extra small devices (phones, up to 480px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
   
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .teamenu {
+    text-align: left;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .teamenu {
+    text-align: right;
+  }
 }
 .shirts {
   overflow: hidden;
@@ -6046,4 +6075,11 @@ footer {
   background: black;
   border-top: #5e3c2f 1px solid;
   padding: 30px 0;
+}
+footer h1,
+footer p {
+  color: #eadbd5;
+}
+footer h1 {
+  font-size: 40px;
 }
