@@ -5966,17 +5966,27 @@ a:hover {
 }
 .header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .header h1 {
   font-size: 80px;
 }
-/* CAROUSEL.LESS FILE */
+@media (max-width: 767px) {
+  .header h1 {
+    font-size: 50px;
+  }
+}
+/* 
+CAROUSEL.LESS FILE 
+*/
 #location {
   background: url('../img/exterior.jpg');
   color: white;
   min-width: 100%;
   height: 300px;
+}
+.locationinfo {
+  background-color: #000000;
 }
 #coffee-carousel {
   height: 360px;
@@ -6009,6 +6019,12 @@ a:hover {
     margin: 0 auto;
   }
 }
+.hero {
+  margin-bottom: 40px;
+}
+/* 
+MENU.LESS FILE
+*/
 h2 {
   text-align: center;
   font-size: 40px;
@@ -6035,26 +6051,58 @@ p {
 .home-menu li {
   padding-bottom: 5px;
 }
+.coffee h3,
+.tea h3 {
+  border-bottom: 1px #eadbd5 dotted;
+  padding-bottom: 20px;
+}
+.coffee ul,
+.tea ul {
+  padding-top: 10px;
+}
 .specials div img {
   width: 100%;
   margin: 0 auto;
 }
-/* Extra small devices (phones, up to 480px) */
-/* No media query since this is the default in Bootstrap */
+.beans-menu div {
+  margin-bottom: 25px;
+}
+.beans-menu img {
+  width: 100%;
+}
+.beans-menu p {
+  color: #eadbd5;
+}
+.coffeetypes li {
+  border-bottom: 2px #eadbd5 solid;
+  padding: 10px 0;
+}
+.coffeetypes a {
+  color: #bf9280;
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
-  .teamenu {
+  .tea {
     text-align: left;
   }
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  .teamenu {
+  .tea {
     text-align: right;
+  }
+  .coffee h3,
+  .tea h3 {
+    border-bottom: 0px #eadbd5 dotted;
+    padding-bottom: 10px;
+  }
+  .coffee ul,
+  .tea ul {
+    padding-top: 0px;
   }
 }
 .shirts {
@@ -6064,13 +6112,71 @@ p {
 .specials {
   padding-top: 10px;
 }
-.col-xs-6 {
+.specials .col-xs-6 {
   padding: 10px;
 }
-.col-xs-6 img {
+.specials .col-xs-6 img {
   width: 100%;
   border: 10px solid rgba(255, 255, 255, 0.4);
 }
+.jumbotron {
+  background: #eadbd5;
+  margin-bottom: 60px;
+}
+.blendsnav .nav li {
+  color: #999999;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin-left: 10px;
+  display: block;
+  float: left;
+}
+.blendsnav .nav li a {
+  color: #895641;
+  padding: 0;
+}
+.blendsnav .nav li a:hover {
+  background: none;
+}
+.blendsnav .nav li a.active {
+  color: #999999;
+}
+.houseroast img {
+  width: 100%;
+}
+.houseroast h2 {
+  color: #895641;
+  text-align: left;
+}
+.houseroast p {
+  color: black;
+}
+.houseroast .divider {
+  border-color: #895641;
+}
+.price {
+  color: #895641;
+  font-size: 22px;
+  font-weight: 400;
+}
+.pricestars {
+  font-size: 22px;
+  color: #895641 !important;
+}
+.btn-group {
+  margin: 10px 0 20px 0;
+}
+.btn-group .btn-default {
+  color: #895641;
+}
+#houseRoast a {
+  color: #895641;
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+/* 
+FOOTER.LESS FILE 
+*/
 footer {
   background: black;
   border-top: #5e3c2f 1px solid;
@@ -6082,4 +6188,14 @@ footer p {
 }
 footer h1 {
   font-size: 40px;
+}
+footer .contact,
+footer .address {
+  padding-top: 15px;
+}
+@media (max-width: 767px) {
+  footer .contact,
+  footer .address {
+    padding-top: 60px;
+  }
 }

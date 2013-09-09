@@ -1,3 +1,8 @@
+/* 
+MENU.LESS FILE
+*/
+//Styles for menu for home page and beans page.
+
 
 h2 {
 	text-align: center;
@@ -36,6 +41,17 @@ p {
 	padding-bottom: 5px;
 }
 
+.coffee, .tea {
+	h3 {
+		border-bottom: 1px @lightBrown dotted;
+		padding-bottom: 20px;
+	}
+
+	ul {
+		padding-top: 10px;
+	}
+}
+
 .specials {
 	div {
 		img {
@@ -45,24 +61,56 @@ p {
 	}
 }
 
+.beans-menu {
+	div {
+		margin-bottom: 25px;
+	}
 
-/* Extra small devices (phones, up to 480px) */
-/* No media query since this is the default in Bootstrap */
+	img {
+		width: 100%;
+	}
+
+	p {
+		color: @lightBrown;
+	}
+}
+
+.coffeetypes {
+	li {
+		border-bottom: 2px @lightBrown solid;
+		padding: 10px 0;
+	}
+	a {
+		color: @mediumBrown;
+	}
+}
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm) {}
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: @screen-md) {
-	.teamenu {
+	.tea {
 		.text-left;
 	}
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg) {
-	.teamenu {
+	.tea {
 		.text-right;
+	}
+	
+	.coffee, .tea {
+		h3 {
+			border-bottom: 0px @lightBrown dotted;
+			padding-bottom: 10px;
+		}
+
+		ul {
+		padding-top: 0px;
+		}
 	}
 }
 
